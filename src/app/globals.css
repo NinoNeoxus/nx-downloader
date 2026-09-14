@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ───────────────────────────────────────────────────── */
+
+@layer base {
+  :root {
+    --color-brand-400: 56 189 248;   /* sky-400 */
+    --color-brand-500: 14 165 233;   /* sky-500 */
+    --color-brand-600: 2 132 199;    /* sky-600 */
+    --color-surface: 24 24 27;       /* zinc-900 */
+    --color-border: 39 39 42;        /* zinc-800 */
+    --radius-card: 16px;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar — thin zinc style */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(9 9 11); /* zinc-950 */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(63 63 70); /* zinc-700 */
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(82 82 91); /* zinc-600 */
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid rgba(14, 165, 233, 0.6);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+/* ─── Utility Classes ─────────────────────────────────────────────────── */
+
+@layer utilities {
+  /* Line clamp utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glass surface */
+  .glass {
+    background: rgba(24, 24, 27, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(39, 39, 42, 0.8);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, rgb(56 189 248), rgb(99 102 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Shimmer animation for skeleton */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgb(39 39 42 / 0.8) 0%,
+      rgb(63 63 70 / 0.5) 50%,
+      rgb(39 39 42 / 0.8) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+/* ─── Component Styles ────────────────────────────────────────────────── */
+
+@layer components {
+  /* Input focus ring override for branded feel */
+  .input-branded:focus {
+    outline: none;
+    box-shadow:
+      0 0 0 1px rgba(14, 165, 233, 0.4),
+      0 0 16px rgba(14, 165, 233, 0.12);
+  }
+
+  /* Button base */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-medium text-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/50;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-500 hover:bg-brand-600 text-white shadow-glow-sm hover:shadow-glow-md active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply btn bg-zinc-800 hover:bg-zinc-700/80 text-zinc-200 border border-zinc-700/60 active:scale-[0.98];
+  }
+}
+
+/* ─── Keyframes (supplemental to Tailwind config) ─────────────────────── */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

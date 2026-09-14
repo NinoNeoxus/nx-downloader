@@ -1,0 +1,59 @@
+NX DOWNLOADER COMMUNITY SOURCE LICENSE
+Version 1.0 — Sole Distribution & Attribution Rights
+
+Copyright (c) 2026 NinoNeoxus (https://github.com/NinoNeoxus/nx-downloader)
+All Rights Reserved.
+
+================================================================================
+PREAMBLE
+================================================================================
+This project is shared with the software development community for educational,
+personal archiving, and non-commercial community use under a source-available,
+controlled-distribution framework.
+
+By accessing, downloading, cloning, or running this source code, you agree to
+the terms outlined in this License.
+
+================================================================================
+1. PERMITTED USES
+================================================================================
+Subject to the terms and restrictions below, the Author grants you a revocable,
+non-exclusive, worldwide license to:
+
+1.1 Study & Review: Inspect, audit, and analyze the source code for educational,
+    research, and personal knowledge enhancement.
+1.2 Self-Hosting: Deploy and operate an instance of the software for personal,
+    internal, or community use.
+1.3 Modification: Make personal modifications and bug fixes to your local or
+    forked copies.
+1.4 Upstream Contribution: Submit issues, feedback, and pull requests directly
+    to the official repository (https://github.com/NinoNeoxus/nx-downloader).
+
+================================================================================
+2. DISTRIBUTION & TRADEMARK RESTRICTIONS
+================================================================================
+2.1 Sole Distribution Right:
+    Official distribution rights are EXCLUSIVELY reserved to NinoNeoxus.
+    You may NOT redistribute, republish, mirror, or repackage this source code
+    or its compiled binaries to any public package registry, marketplace, or
+    third-party distribution channel without prior written permission from the
+    author.
+
+2.2 Prohibition of Unauthorized Rebranding & Reselling:
+    You may NOT remove author attribution, claim original authorship, or sell
+    this source code or derivative works as a commercial product under another
+    brand or organization.
+
+2.3 Canonical Origin Requirement:
+    All forks, public instances, and deployments must preserve visible attribution
+    to the author ("NinoNeoxus") and retain the link to the canonical source
+    repository (https://github.com/NinoNeoxus/nx-downloader).
+
+================================================================================
+3. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+================================================================================
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF,
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
